@@ -20,10 +20,8 @@ app.use('/api', require('./routes/routes'))
 app.get('/', (req, res) => {
     res.send('bienvenue')
 })
-
-
-
+const puerto = process.env.PORT || 4000
 // creation du - creacion del localhost:4000
-app.listen(4000, ()=>{
+app.listen(puerto, ()=>{
     console.log('serveur en place http://localhost:4000');
 })
